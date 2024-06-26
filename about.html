@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74dfc38767.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>     
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- -----about us content------ -->
+    <section class="about-col">
+        <div>
+            <h1>We are the world's largest university</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi exercitationem inventore numquam commodi maiores in voluptatem, facere vel minima perspiciatis, quaerat obcaecati veniam! Sed adipisci voluptate quae enim ullam veritatis voluptas perspiciatis culpa eveniet consequatur! Nihil earum similique iste aut itaque, eaque commodi omnis quas eum optio facilis provident dicta nostrum tempora laboriosam necessitatibus quo eveniet, numquam veniam sequi!</p>
+            <a href="" class="btn">EXPLORE NOW</a>
+        </div>
+        <img src="images/about.jpg" alt="">
+    </section>
+
+    <!-- ------Footer------ -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quae, enim perferendis impedit cumque nobis, praesentium voluptatum sit voluptate temporibus iste hic error soluta officia eum dolor, ab eveniet ipsam?</p>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <p>Made with <i class="fa-solid fa-heart"></i> Easy Tutorials</p>
+    </section>
+
+    <!-- ------JavaScript for Toogle Menu------- -->
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', () => {
+            hamburgerMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
